@@ -12,92 +12,27 @@ class tree{
         right= NULL;
     }
 };
-void left_view(tree*root);
-int sum_up(tree*root);
-int height(tree*root, int maxi, int itr);
-void leve(tree*root);
-int add_nodes(tree* root, int k);
-int search(int ino[], int strt, int end, int curr);
-tree*  buildtree( int preo[], int ino[], int start, int end);
-void inorder(tree*root);
-int nodecount(tree* root);
-int diameter(tree* root);
-int left(tree* root,int count);
-int right(tree* root,int countr);
-void sub_tree_k(tree * , int );
-int print_nodes_at_k(tree* root,tree* target,int k);
-bool lowest_common_ancestor(tree* ,tree* ,tree* );
-int max_path(tree*root,int maximum);
-void BST(tree* root,int n);
-tree* search_BST(tree* root, int n);
-void deletion_BST(tree*root, int n);
-tree* search_prece_BST(tree*root, int n);
-bool checkBST(tree* root, int minimum, int maximum);
-tree* restorer(tree* root);
-int* inorder_array(tree* root);
+void left_view(tree*root);//Prints the left view of trees that is only the leftmost elements
+int sum_up(tree*root);//Adds the toatal sum of trees through recursion
+int height(tree*root, int maxi, int itr);//Gets the height of the tree;
+void level(tree*root);//Prints the tree in a ascending level manner (root first) using queue & recursion
+int add_nodes(tree* root, int k);//Adding the first k nodes in level order traversal
+int search(int ino[], int strt, int end, int curr);//searches between the indices in an inorderr array
+tree*  buildtree( int preo[], int ino[], int start, int end);//Builds A tree using a combination of inorder and preorder traversals
+void inorder(tree*root);//Prints inorder traversal
+int nodecount(tree* root);//Returns the number of nodes
+int diameter(tree* root);//Returns the number of leftmost nodes + number of rightmost nodes + 1 for the root node  
+int left(tree* root,int count);//Returns the number of leftmost nodes
+int right(tree* root,int countr);//Returns the number of rightmost nodes
+void sub_tree_k(tree * , int );//Prints the nodes at the kth level
+int print_nodes_at_k(tree* root,tree* target,int k);//Print nodes at k distance from target node
+int max_path(tree*root,int maximum);//Gives the maximum path for a weighted tree
+void BST(tree* root,int n);//Adds value n in a Binary Search tree
+tree* search_BST(tree* root, int n);//Binary Search in Binary Search Tree
+tree* balanced_BST_from_sorted_arr(tree* root, int arr[], int n, int strt, int end);//Creating a Binaary Search Tree from a sorted array
+bool checkBST(tree* root, int minimum, int maximum);//Check if the tree is a Binary Search tree or not 
+int* inorder_array(tree* root);//Returns inorder array
 int main(){
-  /*int post[] = {4,5,-900,6,7,3,1};
-    int ino[] = {4,-900,5,1,6,3,7};
-    tree*root = buildtree(post,ino,6,0);*/
-    tree*root  = new tree(6);
-    BST(root,7);
-    BST(root,8);
-    BST(root,1);
-    BST(root,3);
-    BST(root,4);
-    int arr[] = {1,2,3,4,5,6,7};
-    tree* uroot = balanced_BST_from_sorted_arr(uroot,arr,7,0,6);
-    //inorder(uroot);
-   // print_nodes_at_k(root, root->left, 1);
-   //cout<<max_path(root,INT32_MIN);
-  /*inorder(root);
-    cout<<"\n";
-    int ans = nodecount(root);
-    cout<<ans<<"\n";
-    leve(root);
-    cout<<'\n';
-    cout<<add_nodes(root,3)<<'\n';
-    cout<<height(root,0,0)<<'\n';
-    cout<<diameter(root); */
-    //sum_up(root);
-
-    //left_view(root);
-   // inorder(root);
-   stack <tree*> current,next,temporary;
-   current.push(root);
-   bool L_to_R = true;
-   while((!current.empty())||(!next.empty()) ){
-    while(!current.empty()){
-        if(L_to_R){
-            tree* temp = current.top();
-            if(temp->right != NULL){
-                next.push(temp->right);
-            }
-            if(temp->left != NULL){
-                next.push(temp->left);
-            }
-            cout<<temp->val<<endl;
-            current.pop();
-        }
-        else{
-            tree* temp = current.top();
-            if(temp->left != NULL){
-                next.push(temp->left);
-            }
-            if(temp->right != NULL){
-                next.push(temp->right);
-            }
-            cout<<temp->val<<endl;
-            current.pop();
-        }
-
-    }
-        temporary = current;
-        current = next;
-        next = temporary;
-        L_to_R = (!L_to_R);
-
-   }
     return 0;
 }
 tree *  buildtree( int preo[], int ino[], int end, int strt){
@@ -140,7 +75,7 @@ int nodecount(tree* root){
     count = nodecount(root->left) + nodecount(root->right) + 1;
     return count;
 }
-void leve(tree*root){
+void level(tree*root){
 
     queue <tree*> q1;
     q1.push(root);
@@ -164,7 +99,7 @@ void leve(tree*root){
     }
 }
 int add_nodes(tree* root, int k){
-        queue <tree*> q1;
+    queue <tree*> q1;
     q1.push(root);
     q1.push(NULL);
     int sum = 0, itr = 1;
@@ -311,12 +246,6 @@ int print_nodes_at_k(tree* root,tree* target,int k){
     }
     return -1;
 }
-bool lowest_common_ancestor(tree* root,tree* t1,tree* t2){
-
-    if(root == t1 || root == t2){
-        return true;
-    }
-}
 int max_path(tree*root,int maximum) {
     int l_max = INT16_MIN;
     int r_max = INT16_MIN;
@@ -401,9 +330,6 @@ tree* balanced_BST_from_sorted_arr(tree* root, int arr[], int n, int strt, int e
     root->left = balanced_BST_from_sorted_arr(root->left,arr,n,strt,mid-1);
     root->right = balanced_BST_from_sorted_arr(root->right,arr,n,mid+1,end);
     return root;
-}
-tree* restorer(tree* root){
-    //inorder
 }
 int* inorder_array(tree* root){
     
