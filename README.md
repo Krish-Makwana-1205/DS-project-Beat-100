@@ -58,7 +58,8 @@ This repository contains the codebase for our Capstone Project developed by the 
    - Created sample snippets
    - Documented the project
 
-- **Neeraj Vania:** 
+- **Neeraj Vania:**
+   - Created sample snippets
    - Conducted project demonstration
 
 - **Dev Trivedi:** 
