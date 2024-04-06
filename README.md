@@ -1,37 +1,66 @@
-# Comprehensive Analysis of Data Structures in Code Snippet Management
+# BEATS 100% Capstone Project
 
-This document presents an in-depth examination of the data structures utilized in a Code Snippet Manager application with a Graphical User Interface (GUI). It explores the rationale behind the selection of these structures, evaluates their efficiency in terms of time and space complexities, and discusses why certain data structures were deemed unsuitable for the project.
+## Project Details
 
-## 1. Overview of the Project
-The project focused on creating a user-friendly Code Snippet Manager with the objective of enhancing developer productivity by facilitating the organization, retrieval, and management of code snippets.
+- **Project ID:** 12
+- **Group Name:** BEATS 100%
+- **Title:** Capstone Project
 
-## 2. Utilized Data Structure: Hash Table
-- **Definition**: A data structure optimized for quick insertion, retrieval, and deletion of key-value pairs. It employs a hash function to map unique keys (often code snippet identifiers) to their corresponding values (the actual code snippets).
-- **Collision Resolution Technique**: Separate Chaining is employed to address collisions that arise when multiple keys hash to the same index within the table. In separate chaining, each index in the hash table acts as the head of a linked list, where elements that collide are stored.
-- **Time and Space Complexity**: Assuming uniform hashing, the average-case time complexity for search, insert, and delete operations is O(1). This implies that these operations can be executed in constant time on average. However, the space complexity scales linearly with the number of elements stored (O(n)) within the hash table.
-- **Justification**: Hash tables were chosen due to their exceptional average-case performance in searching, inserting, and deleting code snippets. Since each code snippet likely possesses a unique identifier, hash tables provide efficient retrieval based on these identifiers, significantly accelerating the process of locating specific snippets within the manager.
+## Project Description
 
-## 3. Not Considered Data Structures
-### 3.1 Stacks and Queues
-- **Unsuitable Ordering Mechanisms**: Stacks and Queues enforce specific ordering disciplines:
-  - Stacks adhere to a Last-In-First-Out (LIFO) principle, where the most recently added element is retrieved first.
-  - Queues follow a First-In-First-Out (FIFO) approach, where the element that was added first is retrieved first.
-- **Mismatch with Random Access Needs**: A Code Snippet Manager necessitates random access, which Stacks and Queues do not provide efficiently.
-- **Retrieval Challenges**: Accessing a specific snippet within a Stack or Queue can be inefficient, especially for large collections.
-- **Limited Functionality in Queues**: Queues only allow access to the element at the front, making them less suitable for quick retrieval of arbitrary snippets.
+This repository contains the codebase for our Capstone Project developed by the BEATS 100% group.
 
-### 3.2 Arrays
-- **Predefined Size Limitation**: Arrays require a predefined size, which is inflexible for dynamic collections of code snippets.
-- **Inefficiency in Resizing**: Resizing an array can be time-consuming, and unused space or insufficient capacity can lead to inefficiencies.
-- **Unsuitable for Deletions**: Deleting elements from arrays can be complex and inefficient, particularly for frequent modifications.
+## Project Members
 
-### 3.3 Singly Linked Lists
-- **Limited Random Access**: Traversing a singly linked list to locate a specific snippet can be time-consuming.
-- **Costly Insertions/Deletions**: Inserting or deleting nodes in a singly linked list may require extensive pointer manipulation, impacting performance.
-- **Not Ideal for Frequent Lookups and Modifications**: Singly linked lists may not offer the performance needed for frequent retrieval and modification of snippets.
+| Name                     | ID         |
+|--------------------------|------------|
+| Krish Makvana            | 202301103  |
+| Dhruv Sanjaykumar Patel  | 202301024  |
+| Neeraj Vania             | 202301060  |
+| Dev Trivedi              | 202301150  |
 
-## 4. Additional Considerations
-This document provides detailed analyses of the time and space complexities associated with each implemented function within the chosen data structures. It also explores the effective utilization of data structures for separate chaining within hash tables and discusses potential drawbacks of arrays and singly linked lists in this context.
+## Repository Contents
 
-## 5. Conclusion
-The strategic selection of hash tables, coupled with a thorough understanding of their time and space complexities, has demonstrably contributed to the development of an efficient and adaptable Code Snippet Manager. This application empowers developers to organize, retrieve, and manage their code snippets effectively, fostering a more productive development environment.
+1. **Project_Documentation:** 
+   - Documentation of the Project 
+
+2. **Stacks_Snippets_Dhruv:** 
+   - Snippets of Data Structure Stacks Added and Created By Dhruv Sanjaykumar Patel 
+
+3. **Tree_Snippets_by_Krish:** 
+   - Snippets related to Tree Data Structure Created by Krish Makvana 
+
+4. **LinkedList_Snippets_Neeraj:** 
+   - Snippets related to Linked List Data Structure Created by Neeraj Vania 
+
+5. **arraySnippetsByDev:** 
+   - Snippets related to Array Data Structure Created by Dev Trivedi 
+
+6. **Project1.exe:** 
+   - Executable file for using the GUI
+
+## How to Use the GUI with the Provided .exe File
+
+1. Click on the [Project1.exe](https://github.com/Krish-Makwana-1205/DS-project-Beat-100/blob/main/Project1.exe) file.
+2. Download the raw file for the Project1.exe.
+3. Open the file explorer and locate the downloaded Project1.exe file.
+4. Double-click on the file to execute it.
+5. If prompted by Windows Defender indicating that the file may be potentially harmful, click on the "More info." button, then click on the "Run anyways" button.
+6. The GUI will launch, and our custom interface will be accessible to you.
+
+## Contributions
+
+- **Krish Makvana:** 
+   - Developed GUI (Graphical User Interface)
+   - Created sample snippets
+
+- **Dhruv Sanjaykumar Patel:**
+   - Created sample snippets
+   - Documented the project
+
+- **Neeraj Vania:** 
+   - Conducted project demonstration
+
+- **Dev Trivedi:** 
+   - Created sample snippets
+   - Documented the project
