@@ -1,0 +1,211 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 620
+  ClientWidth = 812
+  SystemStatusBar.BackgroundColor = claOldlace
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 58.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ListBox1: TListBox
+    Position.X = 67.000000000000000000
+    Position.Y = 384.000000000000000000
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Sorted = True
+    OnItemClick = Find
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 196.000000000000000000
+  end
+  object Button2: TButton
+    Position.X = 275.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 95.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Submit'
+    TextSettings.Trimming = None
+    OnClick = sinp
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 58.000000000000000000
+    Position.Y = 109.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 161.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 205.000000000000000000
+    Viewport.Height = 157.000000000000000000
+  end
+  object Memo2: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 396.000000000000000000
+    Position.Y = 335.000000000000000000
+    Size.Width = 373.000000000000000000
+    Size.Height = 249.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 369.000000000000000000
+    Viewport.Height = 245.000000000000000000
+  end
+  object Button3: TButton
+    Position.X = 275.000000000000000000
+    Position.Y = 335.000000000000000000
+    Size.Width = 95.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Search'
+    TextSettings.Trimming = None
+    OnClick = Button3Click
+  end
+  object Snippets: TLabel
+    Position.X = 67.000000000000000000
+    Position.Y = 302.000000000000000000
+    Size.Width = 208.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Trimming = None
+    Text = 'snippets'
+    TabOrder = 6
+  end
+  object TLabel
+    Position.X = 58.000000000000000000
+    Position.Y = 23.000000000000000000
+    TextSettings.Trimming = None
+    Text = 'Add snippet'
+    TabOrder = 7
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    Position.X = 65.000000000000000000
+    Position.Y = 335.000000000000000000
+    Size.Width = 202.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button1: TButton
+    Position.X = 275.000000000000000000
+    Position.Y = 384.000000000000000000
+    Size.Width = 95.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Library Snippets'
+    TextSettings.Trimming = None
+    OnClick = Button1Click
+  end
+  object Edit3: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 11
+    Position.X = 451.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 198.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button4: TButton
+    Position.X = 674.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 95.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Search Natural'
+    TextSettings.Trimming = None
+    OnClick = Button4Click
+    object Label2: TLabel
+      Position.X = -280.000000000000000000
+      Position.Y = 262.000000000000000000
+      TextSettings.Trimming = None
+      Text = 'Code Space'
+      TabOrder = 5
+    end
+  end
+  object ListBox2: TListBox
+    Position.X = 449.000000000000000000
+    Position.Y = 109.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 161.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = Find2
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 157.000000000000000000
+  end
+  object Button5: TButton
+    Position.X = 275.000000000000000000
+    Position.Y = 433.000000000000000000
+    Size.Width = 95.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+    Text = 'Delete'
+    TextSettings.Trimming = None
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Position.X = 275.000000000000000000
+    Position.Y = 481.000000000000000000
+    Size.Width = 95.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    Text = 'Edit'
+    TextSettings.Trimming = None
+    OnClick = Button6Click
+  end
+  object Label1: TLabel
+    Position.X = 451.000000000000000000
+    Position.Y = 23.000000000000000000
+    Size.Width = 198.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Trimming = None
+    Text = 'Natural Language Search'
+    TabOrder = 17
+  end
+  object key: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 34.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Trimming = None
+    Text = 'key'
+    TabOrder = 19
+  end
+  object code: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 109.000000000000000000
+    Size.Width = 34.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Trimming = None
+    Text = 'code'
+    TabOrder = 20
+  end
+end
