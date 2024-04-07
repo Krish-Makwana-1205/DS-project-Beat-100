@@ -36,12 +36,12 @@ This repository contains the codebase for our Capstone Project developed by the 
 5. **arraySnippetsByDev:** 
    - Snippets related to Array Data Structure Created by Dev Trivedi 
 
-6. **Project1.exe:** 
+6. **Snippet Manager.exe:** 
    - Executable file for using the GUI
 
 ## How to Use the GUI with the Provided .exe File
 
-1. Click on the [Project1.exe](https://github.com/Krish-Makwana-1205/DS-project-Beat-100/blob/main/Project1.exe) file.
+1. Click on the [Snippet Manager.exe](https://github.com/Krish-Makwana-1205/DS-project-Beat-100/blob/main/Snippet%20Manager.exe) file.
 2. Download the raw file for the Project1.exe.
 3. Open the file explorer and locate the downloaded Project1.exe file.
 4. Double-click on the file to execute it.
