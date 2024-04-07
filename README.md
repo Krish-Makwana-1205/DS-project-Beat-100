@@ -39,7 +39,7 @@ This repository contains the codebase for our Capstone Project developed by the 
 6. **Snippet Manager.exe:** 
    - Executable file for using the GUI
 
-7. **Project_Demonstration.mp4:** 
+7. **Project Demonstration.mp4:** 
    - Complete demonstration of the project.
 
 ## How to Use the GUI with the Provided .exe File
