@@ -30,7 +30,7 @@ This repository contains the codebase for our Capstone Project developed by the 
 3. **Tree_Snippets_by_Krish:** 
    - Snippets related to Tree Data Structure Created by Krish Makvana 
 
-4. **LinkedList_Snippets_Neeraj:** 
+4. **neeraj_Snippets_Neeraj:** 
    - Snippets related to Linked List Data Structure Created by Neeraj Vania 
 
 5. **arraySnippetsByDev:** 
