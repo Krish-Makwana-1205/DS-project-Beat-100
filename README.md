@@ -41,6 +41,16 @@ This repository contains the codebase for our Capstone Project developed by the 
 
 7. **Project Demonstration.mp4:** 
    - Complete demonstration of the project.
+     
+8. **Unit1.cpp:**
+   - It contains the backend code for GUI.
+
+9. **Unit1.fmx:**
+   - It is the supporting file for GUI.
+
+10. **Unit1.h:**
+   - It is the supporting file for GUI.
+
 
 ## How to Use the GUI with the Provided .exe File
 
