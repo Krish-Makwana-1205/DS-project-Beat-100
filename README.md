@@ -49,7 +49,7 @@ This repository contains the codebase for our Capstone Project developed by the 
    - It is the supporting file for GUI.
 
 10. **Unit1.h:**
-   - It is the supporting file for GUI.
+    - It is the supporting file for GUI.
 
 
 ## How to Use the GUI with the Provided .exe File
